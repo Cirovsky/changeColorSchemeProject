@@ -2,21 +2,15 @@ import React, { useState } from "react"
 import {
     View,
     Text,
-    StyleSheet,
     Appearance,
 } from 'react-native'
-import Hello from "./Hello"
+import Hello from "./components/Hello"
+import {light, dark} from "./styles/colorSchemes"
 
 let isDark = Appearance.getColorScheme() == 'dark'? true:false
 console.log(isDark)
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        alignItems: "center",
-        justifyContent: "center",
-    }    
-})
+const styles = isDark? {...dark} : {...light}
 
 const colors = {
     backgroundColor: isDark? 'blue': 'pink',

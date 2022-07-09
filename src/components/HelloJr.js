@@ -8,9 +8,9 @@ export default props => {
     return (
             <View>
                 <Text 
-                style={[{fontSize: 30}, props.colorTheme]}
+                style={[{fontSize: 30}]}
                 >
-                    Olá Mundo
+                    Olá Mundo Jr!
                 </Text>
             </View>
     )
